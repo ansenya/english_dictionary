@@ -5,12 +5,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 import logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-)
-
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('uvicorn.warning')
 
 default_url = "sqlite:///./english_dictionary.db"
 SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL", default_url)

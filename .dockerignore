@@ -1,0 +1,7 @@
+.dockerignore
+.env
+.venv
+.idea
+.gitignore
+readme.md
+english_dictionary.db

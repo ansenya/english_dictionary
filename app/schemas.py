@@ -13,7 +13,7 @@ class WordOut(WordCreate):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class UserCreate(BaseModel):
     username: str
